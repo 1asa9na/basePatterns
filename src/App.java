@@ -1,5 +1,9 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        WorkspaceFactory workspaceFactory = new DesignerWorkspaceFactoryImpl();
+        
+        workspaceFactory.createEmployee().printSpeciality();
+        workspaceFactory.createOffice().printInfo();
+        workspaceFactory.createComputer().printModel();
     }
 }
