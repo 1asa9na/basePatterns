@@ -9,11 +9,4 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 
 ## Iterator Pattern
 
-+-----------+    +----------------------------+    +-----------------------+
-| Playlist  | -> | Iterable<T>                |    | Iterator<T>           |
-+-----------+    +----------------------------+    +-----------------------+
-                 | - items : String[]         |    | + hasNext() : boolean |
-                 | + iterator() : Iterator<T> |    | + next() : T          |
-                 +----------------------------+    +-----------------------+
-
 Клиент может пройтись по плейлисту с помощью итератора, т.к. плейлист расширяет класс Iterable.
